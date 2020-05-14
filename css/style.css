@@ -1,0 +1,54 @@
+body{font-family: Arial, Helvetica, sans-serif;margin:0px;padding:0px;background-color:rgb(255, 255, 255);}
+.container{width:80%;margin:auto;overflow:hidden;}
+header{background-color:rgba(50, 117, 112,0.8);line-height:0.2;border-bottom:3px solid orange}
+header .acme{color:orange;} header .webdesign{color:rgb(4, 4, 145);}
+header div.container{display:flex;flex-wrap:wrap; justify-content:space-between;}
+.nav_links li{display:inline-block;margin-top:5px;padding:0px 10px 0px 10px;}
+.nav_links li a{text-decoration:none;transition:color 0.5s;color:white;}
+.nav_links li a:hover{color:red;}
+.nav_links .current{color:orange;}
+/*showCase*/
+#showcase{background:url('../img/showcase.jpg') no-repeat;background-size:cover;width:100%;height:auto;background-position:center;}
+#showcase .containter{width:200px;text-align:center;}
+#showcase .container h1{text-align:center;margin-top:200px;color:white;text-shadow:2px 2px red;}
+#showcase .container p{color:rgb(192, 195, 207); text-shadow:1px 1px black;width:80%;margin-left:10%;}
+/*newsletter*/
+#newsletter{background-color:rgb(64, 66, 74); color:white;}
+#newsletter .container{display:flex;justify-content:space-around;align-items: center;padding:10px;flex-wrap:wrap;}
+#newsletter input[type='email']{padding:10px;width:300px;}
+#newsletter .button_1{padding:12px 12px;width:200px;background-color:orange;color:white;text-align:center;border:0;cursor:pointer;}
+/*boxes*/
+#boxes{margin-top:10px;}
+#boxes .box{float:left; width:30%;text-align:center;margin:10px;}
+#boxes img{width:30%;height:auto;}
+/*footer*/
+footer{background-color:orange;text-align:center;padding:10px;}
+
+/*About Page*/
+#aboutus .container{display:flex;justify-content:space-between;flex-wrap:wrap;}
+#aboutus .item_1{width:65%;flex-shrink:0;}
+#aboutus .item_2{width:30%;flex-shrink:0;background-color:orange;margin:10px 0px;padding:10px;border-radius:5px;}
+/*Service Page*/
+
+#service .item_1{width:65%;float:left;}
+#service .item_2{width:30%;background-color:orange;margin:20px 0px 0px 25px;padding:10px;float:right;border-radius:5px;}
+#service input,textarea{min-width:95%;max-width:95%;padding:5px;background:black;color:white;}
+#service .servicelist{background-color:rgb(209, 205, 205);border:1px solid rgb(194, 188, 188);margin:10px 0px;padding:10px;border-radius:5px;}
+#service .item_1 .servicelist p{font-size:15px;}
+#service .button_2{border:1px solid #2196F3;border-radius:5px; color:black;padding: 10px 38px;font-size: 16px;cursor: pointer;}
+#service .button_2:hover {background: #2196F3;color: white;}
+/*Media quries*/
+@media all and (max-width:600px){
+header div .branding{width:100%;margin-left:30px;} .nav_links{margin-left:2px;}
+#newsletter input[type='email']{padding:10px;width:91%;}
+#newsletter .button_1{width:100%;margin-top:5px;} 
+#boxes .box{float:left; width:100%;text-align:center;margin:10px;}
+#boxes .box p{width:95%;}
+/*about page*/
+#aboutus .item_1{width:95%;flex-shrink:0;}
+#aboutus .item_2{width:95%;flex-shrink:0;background-color:orange;margin:10px 0px;padding:10px;border-radius:5px;}
+/*service page*/
+#service .item_1{width:95%;float:none;}
+#service .item_2{width:90%;background-color:orange;margin:20px 0px 10px 0px;padding:10px;float:left;}
+#service input,textarea{min-width:95%;max-width:95%;padding:5px;background:black;color:white;}
+}
